@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>sample site</title>
-        <link rel="stylesheet" href="static/css/bootstrap.css" type="text/css">
-        <link rel="stylesheet" href="static/css/style.css" type="text/css">
-    </head>
-    <body >
-        <header class="d-flex align-items-center justify-content-center sHeight p-4 text-center bg-light">
-            <div class="mb-3">
-                <label for="contentArea" class="mt-4">Enter your text</label>
-                <input class="mt-4 form-control myinput" id="contentArea">
-                <button id="btn" onclick="getText()" class="mt-4 button" role="button">Print to chat</button>
-            </div>
-        </header>
 
-        <main class="card-body sHeight" style=" overflow:scroll">
-            <table class="table mb-1">
-                <tbody style=" text-align:center;"id="showLists"></tbody>
-            </table>
-        </main> 
-        <script src="static/js/bootstrap.js"></script>
-        <script src="static/js/script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample site</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+</head>
+
+<body class="">
+    <header class="d-flex align-items-center justify-content-center sHeight p-4 bg-light">
+        <div class="mb-3 text-center">
+            <label for="contentArea" class="mt-4">Enter your text</label>
+            <input class="mt-4 form-control myinput" id="contentArea" />
+            <button id="btn" onclick="update()" class="mt-4 btn btn-primary" role="button">
+                Print to chat
+            </button>
+        </div>
+    </header>
+
+    <main class="card-body">
+        <table class="table mb-1">
+            <tbody style="text-align: center" id="showLists"></tbody>
+        </table>
+    </main>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+
 </html>
